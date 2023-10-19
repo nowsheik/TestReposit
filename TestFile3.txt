@@ -1,0 +1,23 @@
+11. Set up the git config credential helper in the terminal window.
+
+If you have a Linux, macOS or UNIX machine, see the Step 3: Set up the credential helper instructions for Linux, macOS, or UNIX.
+If you have a Windows machine see the Step 3: Set up the credential helper instructions for Windows.
+git config --global credential.helper '!aws codecommit credential-helper $@'
+git config --global credential.UseHttpPath true
+
+    12. Navigate back to the AWS CodeCommit console and select the wildrydes-site repository.
+
+    13. Select Clone HTTPS from the Clone URL dropdown to copy the HTTPS URL. 
+
+Select Clone HTTPS
+    14. From your terminal window run git clone and paste the HTTPS URL of the repository. 
+
+The following code block is an example of what you will see in your terminal window:
+
+$ git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/wildrydes-site
+Cloning into ‘wildrydes-site’...
+Username for ‘https://git-codecommit.us-east-1.amazonaws.com/v1/repos/wildrydes-site’: Enter the HTTPS Git credentials for AWS CodeCommit username you generated in Step 6
+Password for ‘https://username@git-codecommit.us-east-1.amazonaws.com/v1/repos/wildrydes-site’: Enter the HTTPS Git credentials for AWS CodeCommit password you generated in Step 6
+warning: You appear to have cloned an empty repository.
+
+There will be a warning that you appear to have cloned an empty repository, this is expected. 

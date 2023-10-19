@@ -1,0 +1,15 @@
+You have two options to manage the source code for this module: AWS CodeCommit (included in the AWS Free Tier) or GitHub. In this tutorial, we will use CodeCommit to store our application code, but you can do the same by creating a repository on GitHub.
+
+If you have never configured AWS CLI on your local machine, open a terminal window to install AWS CLI. The installation instructions vary depending on what operating system you're using. If you already have AWS CLI installed and configured, skip to Step 2.
+Open the AWS CodeCommit console.
+Choose Create Repository.
+Enter wildrydes-site for the Repository name.
+Choose Create.
+Once repository is created, set up an IAM user with Git credentials in the IAM console. Follow the instructions for Step 1 through Step 3 on the Setup for HTTPS users using Git credentials page of the AWS CodeCommit User Guide. 
+Important Note: When setting up your user in the IAM console, you will need to set up and save two sets of credentials to refer back to.
+You must create Access keys in the IAM > Security Credentials tab. Download the Access Key and Secret Access Key IDs or copy and save them in a secure location.
+You must also generate HTTPS Git credentials for AWS CodeCommit. Download or save these generated credentials as well.
+In the terminal window you used to install AWS CLI, enter the command: aws configure
+Enter the AWS Access Key ID and Secret Access Key you created in Step 6. 
+For Default region name enter the Region you initially selected to create your CodeCommit repository in.
+Leave Default output format blank, and press enter. 
